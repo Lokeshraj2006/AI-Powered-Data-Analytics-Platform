@@ -30,7 +30,7 @@ git clone https://github.com/Lokeshraj2006/AI-Powered-Data-Analytics-Platform.gi
 cd AI-Powered-Data-Analytics-Platform
 
 python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 

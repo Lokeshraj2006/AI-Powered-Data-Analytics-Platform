@@ -1,0 +1,42 @@
+# Docker Compose for Development and Production
+version: '3.8'
+
+services:
+  # Main Streamlit Application
+  gemini-agent:
+    build: .
+    container_name: gemini-dataframe-agent
+    ports:
+      - "8501:8501"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - REDIS_URL=redis://redis:6379
+      - ENVIRONMENT=production
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      - redis
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  # Redis for Caching
+  redis:
+    image: redis:7-alpine
+    container_name: gemini-agent-redis
+    command: redis-server --appendonly yes
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - app-network
+
+volumes:
+  redis_data:
+
+networks:
+  app-network:
+    driver: bridge

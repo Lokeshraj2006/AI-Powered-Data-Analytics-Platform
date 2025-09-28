@@ -1,0 +1,66 @@
+# Production Requirements for Enhanced Gemini DataFrame Agent
+# Core Dependencies - Updated for 2025 Production Deployment
+
+# === CORE FRAMEWORK ===
+streamlit>=1.28.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# === AI & ML DEPENDENCIES ===
+google-genai>=1.0.0
+langchain>=0.3.0
+langchain-experimental>=0.3.0
+langchain-google-genai>=2.0.0
+
+# === DATA PROCESSING ===
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+python-multipart>=0.0.6
+
+# === DATA VISUALIZATION ===
+plotly>=5.15.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# === DATABASE & CACHING ===
+sqlalchemy>=2.0.0
+redis>=5.0.0
+
+# === AUTHENTICATION & SECURITY ===
+pyjwt>=2.8.0
+cryptography>=41.0.0
+passlib>=1.7.4
+bcrypt>=4.0.0
+
+# === WEB & API ===
+requests>=2.31.0
+websockets>=12.0
+
+# === MONITORING & OBSERVABILITY ===
+prometheus-client>=0.17.0
+psutil>=5.9.0
+
+# === EXPORT & REPORTING ===
+reportlab>=4.0.0
+jinja2>=3.1.0
+
+# === DATA VALIDATION ===
+pydantic>=2.0.0
+
+# === UTILITY & ENVIRONMENT ===
+python-dotenv>=1.0.0
+rich>=13.0.0
+
+# === TESTING & QUALITY ===
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+black>=23.7.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# === DEVELOPMENT TOOLS ===
+jupyter>=1.0.0
+ipython>=8.14.0

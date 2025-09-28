@@ -1,4 +1,4 @@
-# 🤖 AI Data Analytics Platform
+#  AI Data Analytics Platform
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io)

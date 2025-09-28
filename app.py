@@ -1,6 +1,5 @@
 """
-🤖 AI Data Analytics Pro - FIXED SPECIFIC INSIGHTS
-Fixed: Each insight button now provides UNIQUE, SPECIFIC analysis tailored to the question
+AI Data Analytics 
 """
 
 import streamlit as st
@@ -22,13 +21,13 @@ load_dotenv()
 
 # Page configuration
 st.set_page_config(
-    page_title="🤖 AI Data Analytics Pro",
+    page_title="AI Data Analytics",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# FIXED CSS - Perfect horizontal alignment and text display
+# CSS - Perfect horizontal alignment and text display
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -639,7 +638,7 @@ def display_enhanced_overview(df):
     # Add spacing before quick insights
     st.markdown("<div style='margin-bottom: 2rem;'></div>", unsafe_allow_html=True)
     
-    # FIXED: Quick visualizations with proper axis labels
+    # Quick visualizations with proper axis labels
     st.markdown("### 📈 Quick Insights")
     
     col1, col2 = st.columns(2)
@@ -658,7 +657,7 @@ def display_enhanced_overview(df):
                             'y': 'Revenue ($)'
                         })
             
-            # FIXED: Proper axis formatting without duplicate parameters
+            # Proper axis formatting without duplicate parameters
             fig.update_layout(
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)',
@@ -689,7 +688,7 @@ def display_enhanced_overview(df):
                                  'y': 'Number of Customers'
                              })
             
-            # FIXED: Proper axis formatting without duplicate parameters
+            # Proper axis formatting without duplicate parameters
             fig.update_layout(
                 plot_bgcolor='rgba(0,0,0,0)',
                 paper_bgcolor='rgba(0,0,0,0)',
@@ -826,7 +825,7 @@ def create_advanced_visualization(df, chart_type, x_col, y_col, color_col=None, 
                                 color_col: f'{color_col}' if color_col else None
                             })
         
-        # FIXED: Enhanced styling with CLEAR axis labels (NO DUPLICATE PARAMETERS)
+        # Enhanced styling with CLEAR axis labels (NO DUPLICATE PARAMETERS)
         fig.update_layout(
             plot_bgcolor='rgba(255,255,255,0.9)',
             paper_bgcolor='rgba(255,255,255,0.9)',
@@ -853,7 +852,7 @@ def create_advanced_visualization(df, chart_type, x_col, y_col, color_col=None, 
         st.error(f"Error creating visualization: {str(e)}")
         return None
 
-# FIXED: SPECIFIC analysis functions for each insight type
+# SPECIFIC analysis functions for each insight type
 def get_business_overview_analysis(df):
     """Complete Business Overview - SPECIFIC analysis"""
     insights = []
@@ -1257,7 +1256,7 @@ def get_operational_efficiency_analysis(df):
 • Implement continuous monitoring for efficiency metrics
 • Balance cost efficiency with service quality standards"""
 
-# FIXED: Updated get_enhanced_ai_analysis to use specific functions
+# get_enhanced_ai_analysis to use specific functions
 def get_enhanced_ai_analysis(df, question):
     """Enhanced AI analysis with SPECIFIC responses based on question type"""
     
@@ -2092,4 +2091,5 @@ Examples:
                         st.plotly_chart(fig, use_container_width=True)
 
 if __name__ == "__main__":
+
     main()

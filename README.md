@@ -98,7 +98,8 @@ flowchart TD
 
 ---
 
-##⚠️ Limitations and Notes
+## ⚠️ Limitations and Notes
+---
 When the app shows a message like "Generated 1,609 random records with 20 fields", you might notice that only a small subset of rows and columns (e.g., around 9) appears in the data preview or even in the exported files. This happens due to:
 
 Incomplete AI-generated data: The AI may sometimes return incomplete or truncated JSON data due to token length limits or other API constraints.

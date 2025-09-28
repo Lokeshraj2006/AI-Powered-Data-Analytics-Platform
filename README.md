@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ### API Key
 1. Get a Gemini API key from [Google AI Studio](https://aistudio.google.com/).  
-2. Copy `.env.example` → `.env`  
+2. Copy `.env`  
 3. Add your key:  
    ```
    GEMINI_API_KEY=your_key_here
@@ -106,10 +106,10 @@ Incomplete AI-generated data: The AI may sometimes return incomplete or truncate
 
 Fallback Dataset: When AI-generated data is insufficient, the app falls back on a timestamp-based random dataset generator that creates smaller or limited samples.
 
-Display and Export Limitations: UI previews often show truncated views for performance reasons. Ensure you check logs or print statements to confirm actual dataset size.
-
 JSON Parsing and Export: Partial or malformed JSON from AI responses can result in smaller DataFrames. The export feature saves what is currently loaded, so if the DataFrame is small, exports will also be small.
 
+
+This is a starting demo app and may see improvements in future releases to address these issues.
 ---
 
 ## 🏗 Project Layout
@@ -117,9 +117,8 @@ JSON Parsing and Export: Partial or malformed JSON from AI responses can result 
 ```
 AI-Powered-Data-Analytics-Platform/
 ├── app.py              # Main Streamlit app
-├── setup_project.py    # Optional auto-setup script
 ├── requirements.txt
-├── .env.example
+├── .env
 ├── README.md
 └── src/                # Source code modules
 ```
